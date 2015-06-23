@@ -1,7 +1,6 @@
-FROM nginx:1.7
+FROM logicify/centos7:latest
 MAINTAINER Dmitry Berezovsky "corvis.mail@gmail.com"
 
-FROM corvis/centos7:latest
 RUN yum -y update \
     && yum -y install nginx
 
